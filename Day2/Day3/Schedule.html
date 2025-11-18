@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weekly Schedule</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 100px repeat(5, 1fr);
+            gap: 10px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .time, .day {
+            background-color: #b7e3ea;
+            padding: 10px;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .day {
+            background-color: #d7a8e9;
+        }
+
+        .slot {
+            background-color: #f5e1f4;
+            height: 45px;
+            border-radius: 20px;
+        }
+
+        .yellow { background-color: #f7e891; }
+        .pink { background-color: #f5c2da; }
+        .blue { background-color: #c3e5f3; }
+    </style>
+
+</head>
+<body>
+
+    <h1>Weekly Schedule</h1>
+
+    <div class="container">
+
+        <!-- Time column -->
+        <div class="time">08:00</div>
+        <div class="time">09:00</div>
+        <div class="time">10:00</div>
+        <div class="time">11:00</div>
+        <div class="time">12:00</div>
+        <div class="time">13:00</div>
+        <div class="time">14:00</div>
+        <div class="time">15:00</div>
+        <div class="time">16:00</div>
+
+        <!-- Days -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+
+        <!-- Monday slots -->
+        <div class="slot pink"></div>
+        <div class="slot pink"></div>
+        <div class="slot pink"></div>
+        <div class="slot pink"></div>
+        <div class="slot pink"></div>
+        <div class="slot pink"></div>
+        <div class="slot pink"></div>
+        <div class="slot pink"></div>
+        <div class="slot pink"></div>
+
+        <!-- Tuesday slots -->
+        <div class="slot yellow"></div>
+        <div class="slot yellow"></div>
+        <div class="slot yellow"></div>
+        <div class="slot yellow"></div>
+        <div class="slot yellow"></div>
+        <div class="slot yellow"></div>
+        <div class="slot yellow"></div>
+        <div class="slot yellow"></div>
+        <div class="slot yellow"></div>
+
+        <!-- Wednesday slots -->
+        <div class="slot blue"></div>
+        <div class="slot blue"></div>
+        <div class="slot blue"></div>
+        <div class="slot blue"></div>
+        <div class="slot blue"></div>
+        <div class="slot blue"></div>
+        <div class="slot blue"></div>
+        <div class="slot blue"></div>
+        <div class="slot blue"></div>
+
+        <!-- Thursday slots -->
+        <div class="slot yellow"></div>
+        <div class="slot yellow"></div>
+        <div class="slot yellow"></div>
+        <div class="slot yellow"></div>
+        <div class="slot yellow"></div>
+        <div class="slot yellow"></div>
+        <div class="slot yellow"></div>
+        <div class="slot yellow"></div>
+        <div class="slot yellow"></div>
+
+        <!-- Friday slots -->
+        <div class="slot pink"></div>
+        <div class="slot pink"></div>
+        <div class="slot pink"></div>
+        <div class="slot pink"></div>
+        <div class="slot pink"></div>
+        <div class="slot pink"></div>
+        <div class="slot pink"></div>
+        <div class="slot pink"></div>
+        <div class="slot pink"></div>
+
+    </div>
+
+</body>
+</html>
