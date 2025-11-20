@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Investors</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Main Grid */
+        .container {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);   /* Large Screen */
+            gap: 20px;
+        }
+
+        /* Card */
+        .card {
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h2 {
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: gray;
+        }
+
+        /* Medium Screen */
+        @media screen and (max-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Small Screen */
+        @media screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Very Small Screen */
+        @media screen and (max-width: 480px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Masai Investors</h1>
+
+    <div class="container">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="https://cdn.masaischool.com/masai-website/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg">
+            <h2>Vijay Shekhar Sharma</h2>
+            <p>Founder & CEO</p>
+            <img src="https://cdn.masaischool.com/masai-website/paytm_rect_06df45a24f.svg" width="80">
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://cdn.masaischool.com/masai-website/Rectangle_427_637d69bb57.png">
+            <h2>Kunal Shah</h2>
+            <p>Founder</p>
+            <img src="https://cdn.masaischool.com/masai-website/cred_0a47d7b4f8.png" width="80">
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="https://cdn.masaischool.com/masai-website/amrish_rau_pine_labs_144e5e587c.jpg">
+            <h2>Amrish Rau</h2>
+            <p>CEO</p>
+            <img src="https://cdn.masaischool.com/masai-website/pine_labs_0aa2407434.png" width="80">
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="https://cdn.masaischool.com/masai-website/Sampad_swain_Instamojo_f12bf6341e.jpg">
+            <h2>Sampad Swain</h2>
+            <p>Co-Founder & CEO</p>
+            <img src="https://cdn.masaischool.com/masai-website/instamojo_8763e704f7.png" width="80">
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="https://cdn.masaischool.com/masai-website/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg">
+            <h2>Ankush_Sachdeva</h2>
+            <p>co- Founder</p>
+            <img src="https://cdn.masaischool.com/masai-website/sharechat_rect_73d95cd4e1.svg" width="80">
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <img src="https://cdn.masaischool.com/masai-website/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg">
+            <h2>Bhanu Pratap</h2>
+            <p>Co-founder</p>
+            <img src="https://cdn.masaischool.com/masai-website/sharechat_rect_73d95cd4e1.svg" width="80">
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card">
+            <img src="https://cdn.masaischool.com/masai-website/Akhil_Gupta_Nobroker_539cd97f6c.jpg">
+            <h2>Akhil Gupta</h2>
+            <p>founder</p>
+            <img src="https://cdn.masaischool.com/masai-website/nobroker_rect_28c9778c30.svg" width="80">
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card">
+            <img src="https://cdn.masaischool.com/masai-website/Vipin_Pathak_Care24_acd02cd173.jpg">
+            <h2>Vipin Pathak</h2>
+            <p>Co-founder</p>
+            <img src="https://cdn.masaischool.com/masai-website/care24_1164f7a2cd.png" width="80">
+        </div>
+
+    </div>
+
+</body>
+</html>
