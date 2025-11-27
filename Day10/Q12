@@ -12,4 +12,9 @@ function handleCompletion(message) {
 
 // Calling the timer function
 timer(2000, handleCompletion);   // waits 2 seconds then prints the message
-f
+function handleCompletion(message) {
+    console.log(message);
+}
+
+// Calling the timer function
+timer(2000, handleCompletion);   // waits 2 seconds then prints the message
