@@ -1,0 +1,15 @@
+// Function that runs a timer and calls a callback after completion
+function timer(duration, onComplete) {
+    setTimeout(() => {
+        onComplete(`Timer of ${duration} ms finished`);
+    }, duration);
+}
+
+// Callback function
+function handleCompletion(message) {
+    console.log(message);
+}
+
+// Calling the timer function
+timer(2000, handleCompletion);   // waits 2 seconds then prints the message
+f
