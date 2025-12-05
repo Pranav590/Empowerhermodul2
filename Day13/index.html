@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph Manipulation</title>
+</head>
+<body>
+
+    <h2>Paragraph Generator</h2>
+
+    <!-- Buttons to add and remove paragraphs -->
+    <button id="addParaBtn">Add Paragraph</button>
+    <button id="removeParaBtn">Remove Last Paragraph</button>
+
+    <!-- Container where paragraphs will be added -->
+    <div id="paraContainer"></div>
+
+    <script>
+        // Select the container div
+        const container = document.getElementById("paraContainer");
+
+        // Select buttons
+        const addBtn = document.getElementById("addParaBtn");
+        const removeBtn = document.getElementById("removeParaBtn");
+
+        // Function to add a new paragraph
+        addBtn.addEventListener("click", function () {
+            // Create a new paragraph element
+            const newPara = document.createElement("p");
+
+            // Add text inside the paragraph
+            newPara.textContent = "This is a new paragraph.";
+
+            // Append paragraph to container
+            container.appendChild(newPara);
+        });
+
+        // Function to remove last added paragraph
+        removeBtn.addEventListener("click", function () {
+            // Check if container has at least one paragraph
+            if (container.lastChild) {
+                // Remove the last child (last added paragraph)
+                container.removeChild(container.lastChild);
+            }
+        });
+    </script>
+
+</body>
+</html>
